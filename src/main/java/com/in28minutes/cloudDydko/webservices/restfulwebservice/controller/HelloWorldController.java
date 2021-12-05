@@ -1,5 +1,6 @@
 package com.in28minutes.cloudDydko.webservices.restfulwebservice.controller;
 
+import com.in28minutes.cloudDydko.webservices.restfulwebservice.controller.helloWorldBean.HelloWorldBean;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
