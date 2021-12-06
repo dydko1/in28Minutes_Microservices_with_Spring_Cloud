@@ -10,7 +10,7 @@ import java.util.List;
 public class UserDaoService {
     private static List<User> users = new ArrayList<>();
     //private static int usersCount = users.size();
-    private static int usersCount = 4;
+    private static int usersCount = 0;
 
     static {
         System.out.println("add users!!!\n");
@@ -26,8 +26,9 @@ public class UserDaoService {
 
     public User save(User user) {
         if (user.getId() == null) {
-            System.out.println("Value is null, Miro");
-            user.setId(++usersCount);
+            //System.out.println("Value is null, Miro: " + users.size());
+            usersCount = users.size();
+            user.setId(++usersCount); //) + 100);
         }
         users.add(user);
         return user;
