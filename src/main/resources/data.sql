@@ -10,4 +10,6 @@ INSERT INTO country1 (name) VALUES ('Italy');
 INSERT INTO country1 (name) VALUES ('Poland');
 
 insert into USER(id,birth_date, name) values(1000,sysdate(), 'AB');
+insert into USER(id,birth_date, name) values(1001,sysdate(), 'Miro');
+insert into USER(id,birth_date, name) values(1002,sysdate(), 'Dydko');
 
