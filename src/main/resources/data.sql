@@ -13,5 +13,6 @@ insert into USER values(1000,sysdate(), 'AB');
 insert into USER values(1001,sysdate(), 'Miro');
 insert into USER values(1002,sysdate(), 'Dydko');
 
-insert into POST values(12,'fdsfdsf',1000);
+insert into POST values(12,'My first post',1000);
+insert into POST values(13,'My second step', 1001);
 
