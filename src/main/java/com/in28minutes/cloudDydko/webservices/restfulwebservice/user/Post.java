@@ -1,5 +1,7 @@
 package com.in28minutes.cloudDydko.webservices.restfulwebservice.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +13,7 @@ public class Post {
     private String description;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
     private User user;
 
     public Post() {
@@ -30,6 +33,14 @@ public class Post {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
